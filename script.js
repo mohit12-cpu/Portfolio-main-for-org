@@ -22,14 +22,16 @@ const navClose = document.getElementById('nav-close');
 // Show Menu
 if (navToggle) {
     navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
     });
 }
 
 // Hide Menu
 if (navClose) {
     navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
     });
 }
 
@@ -37,7 +39,8 @@ if (navClose) {
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
     });
 });
 

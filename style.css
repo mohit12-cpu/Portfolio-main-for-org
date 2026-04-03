@@ -742,18 +742,14 @@ img {
     }
 
     .nav-toggle {
-        display: block;
-        color: var(--text-color);
-        transition: transform 0.3s ease;
-    }
-    
-    .nav-toggle {
         display: flex;
         flex-direction: column;
         gap: 5px;
         padding: 5px;
         cursor: pointer;
         z-index: 102;
+        color: var(--text-color);
+        transition: transform 0.3s ease;
     }
     
     .nav-toggle span {
@@ -762,6 +758,7 @@ img {
         background-color: var(--text-color);
         border-radius: 2px;
         transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        display: block;
     }
     
     .nav-toggle.active span:nth-child(1) {

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Aryan Uraw - Frontend Developer, UI/UX Designer, and Video Editor.">
+    <meta name="keywords" content="Aryan Uraw, contact, get in touch, frontend developer, UI/UX designer, video editor, portfolio">
+    <meta name="author" content="Aryan Uraw">
+    <meta name="robots" content="index, follow">
+    <title>Contact | Aryan Uraw</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">Aryan Uraw</a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="experience.html" class="nav-link">Experience</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+                <div class="contact-container grid">
+                    
+                    <div class="contact-form" data-aos="fade-right">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required />
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message <i class='bx bx-paper-plane'></i></button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info" data-aos="fade-left">
+                        <p>Feel free to reach out. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                        <br>
+                            <a href="mailto:aryanuraw96@gmail.com"class="social-link">
+                                <i class='bx bx-envelope'></i> Email : aryanuraw96@gmail.com
+                            </a>
+                            <br>
+
+                            <a href="https://www.linkedin.com/in/aryan-uraw-07130b373" class="social-link"> <i class='bx bxl-linkedin'></i> LinkedIn : aryan-uraw-07130b373
+                            </a>
+                            <br>
+                            <a href="https://github.com/aryanuraw9" class="social-link"> <i class='bx bxl-github'></i> GitHub : https://github.com/aryanuraw9
+                            </a>
+                            
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Your email has been sent successfully!</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Aryan Uraw | All Rights Reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/aryanuraw9" class="social-link"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/aryan-uraw-07130b373" class="social-link"><i class='bx bxl-linkedin'></i></a>
+                    <a href="mailto:aryanuraw96@gmail.com" class="social-link"><i class='bx bx-envelope'></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

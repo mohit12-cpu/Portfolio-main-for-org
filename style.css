@@ -195,6 +195,11 @@ img {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--text-color); /* Light on dark header */
+    transition: color 0.3s ease;
+}
+
+.nav-logo:hover {
+    color: var(--primary-color);
 }
 
 .nav-link {
